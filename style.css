@@ -209,12 +209,23 @@ footer{
 
 #contact-box{
     display: flex;
-}
-#contact-box input{
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
 
 }
-
+#contact-box input,
 #contact-box textarea{
     width: 100%;
-    padding: 0.5rem;
+    padding: 0.3rem;
+    border-radius: 10px;
+    font-size: 0.9rem;
+}
+
+#contact-box form{
+    width: 40%;
+}
+#contact-box label{
+    font-family: 'Bree Serif', serif;
+    font-size: 1.3rem;
 }
