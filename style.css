@@ -128,10 +128,31 @@ margin: 34px;
 }
 /*Client Section*/
 
+#client-section{
+height: 100%;
+}
+#client-section::before{
+    content: "";
+    position: absolute;
+    background: url(background1.jpg);
+    width: 100%;
+    height: 45%;
+    z-index: -1;
+    opacity: 0.4;
+}
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+.client-item{
+    padding: 34px;
+}
 
-
-
+#clients img{
+    height: 150px;
+}
 
 /* Utility Classes */
 .h-primary{
@@ -162,3 +183,38 @@ padding: 12px;
     background-color: rgb(221, 96, 96);
 }
 
+/* Footer */
+footer{
+    background: black;
+    color: azure;
+    padding: 9px 20px;
+}
+
+/* contact section */
+#contact{
+    position: relative;
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    background: url(background4.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#contact-box{
+    display: flex;
+}
+#contact-box input{
+
+}
+
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+}
